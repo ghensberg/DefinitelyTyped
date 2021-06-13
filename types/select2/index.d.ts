@@ -1,4 +1,4 @@
-// Type definitions for Select2 4.0
+// Type definitions for Select2 4.1
 // Project: http://ivaynberg.github.com/select2/, https://select2.org
 // Definitions by: Boris Yankov <https://github.com/borisyankov>
 //                 denisname <https://github.com/denisname>
@@ -200,8 +200,6 @@ export interface Options<Result = DataFormat | GroupedDataFormat, RemoteResult =
     amdBase?: string;
     amdLanguageBase?: string;
     closeOnSelect?: boolean;
-    containerCss?: any;
-    containerCssClass?: string;
     data?: DataFormat[] | GroupedDataFormat[];
     dataAdapter?: any;
     debug?: boolean;
@@ -224,6 +222,8 @@ export interface Options<Result = DataFormat | GroupedDataFormat, RemoteResult =
     placeholder?: string | IdTextPair;
     resultsAdapter?: any;
     selectionAdapter?: any;
+    selectionCss?: any;
+    selectionCssClass?: string;
     selectOnClose?: boolean;
     sorter?: (data: Array<OptGroupData | OptionData | IdTextPair>) => Array<OptGroupData | OptionData | IdTextPair>;
     tags?: boolean;
